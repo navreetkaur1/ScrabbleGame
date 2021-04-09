@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="728.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScrabbleGameController">
+   <children>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="12.0" prefHeight="45.0" prefWidth="532.0" text="welcome to scrabble game">
+         <font>
+            <Font name="Arial Narrow" size="23.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="22.0" layoutY="82.0" prefHeight="27.0" prefWidth="562.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="WordLabel" />
+            <Button fx:id="submitButton" mnemonicParsing="false" onAction="#SubmitAction" text="Submit" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Button>
+            <TextField fx:id="totalScoreID" GridPane.columnIndex="2" />
+            <Button fx:id="totalScoreButton" mnemonicParsing="false" onAction="#totalScoreAction" prefHeight="26.0" prefWidth="163.0" text="total Score" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+      <GridPane layoutX="28.0" layoutY="190.0" prefHeight="347.0" prefWidth="616.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="104.59998168945313" minHeight="10.0" prefHeight="51.79999389648438" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="95.00000610351563" minHeight="10.0" prefHeight="63.19999999999999" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="95.9999755859375" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="75.39999999999998" minHeight="10.0" prefHeight="75.39999999999998" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="clickBButton" mnemonicParsing="false" onAction="#dislpayB" text="B" GridPane.columnIndex="1" />
+            <Button fx:id="clickCButton" mnemonicParsing="false" onAction="#displayC" text="C" GridPane.columnIndex="2" />
+            <Button fx:id="clickDButton" mnemonicParsing="false" onAction="#displayD" text="D" GridPane.columnIndex="3" />
+            <Button fx:id="clickEButton" mnemonicParsing="false" onAction="#DisplayE" text="E" GridPane.columnIndex="4" />
+            <Button fx:id="clickFButton" mnemonicParsing="false" onAction="#displayF" text="F" GridPane.columnIndex="5" />
+            <Button fx:id="clickGButton" mnemonicParsing="false" onAction="#displayG" text="G" GridPane.columnIndex="6" />
+            <Button fx:id="clickHButton" mnemonicParsing="false" onAction="#displayH" text="H" GridPane.rowIndex="1" />
+            <Button fx:id="clickOButton" mnemonicParsing="false" onAction="#displayOButton" text="O" GridPane.rowIndex="2" />
+            <Button fx:id="clickVButton" mnemonicParsing="false" onAction="#displayV" text="V" GridPane.rowIndex="3" />
+            <Button fx:id="clickIButton" mnemonicParsing="false" onAction="#displayI" text="I" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="clickPButton" mnemonicParsing="false" onAction="#displayP" text="P" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="clickWButton" mnemonicParsing="false" onAction="#displayW" text="W" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="clickAButton" mnemonicParsing="false" onAction="#DisplayA" text="A" />
+            <Button fx:id="clickJButton" mnemonicParsing="false" onAction="#displayJ" text="J" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="clickQButton" mnemonicParsing="false" onAction="#displayQ" text="Q" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="clickXButton" mnemonicParsing="false" onAction="#displayX" text="X" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="clickKButton" mnemonicParsing="false" onAction="#displayK" text="K" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="clickRButton" mnemonicParsing="false" onAction="#displayR" text="R" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="clickYButton" mnemonicParsing="false" onAction="#displayY" text="Y" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="clickLButton" mnemonicParsing="false" onAction="#displayL" text="L" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="clickSButton" mnemonicParsing="false" onAction="#displayS" text="S" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="clickMButton" mnemonicParsing="false" onAction="#displayM" text="M" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="clickTButton" mnemonicParsing="false" onAction="#displayT" text="T" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="clickNButton" mnemonicParsing="false" onAction="#displayN" text="N" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button fx:id="clickUButton" mnemonicParsing="false" onAction="#displayU" text="U" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Button fx:id="clickZ" mnemonicParsing="false" onAction="#displayZ" text="Z" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label fx:id="error" layoutX="161.0" layoutY="117.0" prefHeight="18.0" prefWidth="378.0" textFill="#dd1a1a" />
+      <TextArea fx:id="TextFieldID" layoutX="43.0" layoutY="552.0" prefHeight="132.0" prefWidth="532.0" />
+   </children>
+</AnchorPane>
